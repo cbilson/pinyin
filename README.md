@@ -12,13 +12,13 @@ In your code:
 
     > (use 'pinyin.core)
     
-    > (hanzi->pinyin "我要便成拼音“)
+    > (hanzi->pinyin "我要变成拼音“)
     
     (["wŏ"] ["yào" "yāo"] ["biàn" "pián"] ["chéng"] ["pīn"] ["yīn"])
     
     ;; just taking the first pronunciation is actually pretty bad,
     ;; but just for fun...
-    > (->> (hanzi->pinyin "我要便成拼音")
+    > (->> (hanzi->pinyin "我要变成拼音")
            (map first)
            (interpose " ")
            (apply str))
